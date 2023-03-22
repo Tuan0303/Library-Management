@@ -13,7 +13,13 @@ footer {
 }
 
 .column {
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .column h3 {
@@ -56,6 +62,11 @@ footer {
     font-size: 40px;
 }
 
+.fa:hover{
+    box-shadow: 4px 4px 10px rgba(30, 163, 215, 0.662);
+    padding: 2px;
+}
+
 li a {
     text-decoration: none;
     color: black;
@@ -68,4 +79,28 @@ li a {
 
 .link:hover {
     color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+    .column {
+        width: calc(33.33% - 20px);
+        max-width: 100%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .column {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
 }
