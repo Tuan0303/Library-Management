@@ -1,15 +1,16 @@
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #67dde688;
+    background-color: #67dee6;
     padding: 10px 30px 10px 30px;
     font-size: 14px;
     color: black;
     font-family: Arial, sans-serif;
-    position: fixed;
+    margin:-16px;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 
 .column {

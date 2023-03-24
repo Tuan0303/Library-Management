@@ -11,12 +11,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { DetailsPageComponent } from './User/details-page/details-page.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +28,11 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatExpansionModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
