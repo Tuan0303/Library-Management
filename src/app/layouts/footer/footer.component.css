@@ -1,16 +1,14 @@
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #67dee6;
+    background: linear-gradient(to left, #c6ffdd, #fbd786);;
     padding: 10px 30px 10px 30px;
     font-size: 14px;
     color: black;
     font-family: Arial, sans-serif;
     margin:-16px;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0; */
+    margin-right: -24px;
+    font-size: 17px;
 }
 
 .column {
@@ -54,7 +52,7 @@ footer {
 }
 
 .social-media a {
-    color: black;
+    color: blac;
     padding-bottom: 5px;
 }
 
@@ -74,12 +72,12 @@ li a {
 }
 
 .color-icon {
-    color: black;
-    font-size: 15px;
+    color: blac;
+    font-size: 17px;
 }
 
 .link:hover {
-    color: blue;
+    background-color: transparent;color: #2979ff;
 }
 
 @media only screen and (min-width: 768px) {

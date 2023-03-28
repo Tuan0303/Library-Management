@@ -14,12 +14,19 @@ import {MatMenuModule} from '@angular/material/menu';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';
+import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
+import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DetailsPageComponent
+    DetailsPageComponent,
+    BackToTopComponent,
+    ToggleThemeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatFormFieldModule,
     MatButtonModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
