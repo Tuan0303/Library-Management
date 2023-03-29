@@ -14,12 +14,14 @@ import {MatMenuModule} from '@angular/material/menu';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ErrorPageComponent } from './User/error-page/error-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DetailsPageComponent
+    DetailsPageComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
