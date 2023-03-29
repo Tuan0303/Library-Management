@@ -18,6 +18,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
 import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.component';
+import { SearchResultComponent } from './User/search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.compon
     FooterComponent,
     DetailsPageComponent,
     BackToTopComponent,
-    ToggleThemeComponent
+    ToggleThemeComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
