@@ -19,13 +19,15 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { LoginPageComponent } from './User/login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterPageComponent } from './User/register-page/register-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     DetailsPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,

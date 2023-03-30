@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class LoginPageComponent {
   myEmail: string = '';
   myPass: string = '';
-  save = false;
 
   constructor(private router: Router, private buider: FormBuilder) {}
 
