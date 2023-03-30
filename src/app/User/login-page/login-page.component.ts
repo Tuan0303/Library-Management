@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -7,15 +8,31 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
-  hide = true;
+  myEmail: string = '';
+  myPass: string = '';
+  save = false;
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+  constructor(private router: Router, private buider: FormBuilder) {}
 
-  getErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter a value';
-    }
+  email = new FormControl('',[
+    Validators.required,
+    Validators.email
+  ]);
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+  password = new FormControl('',[
+    Validators.required,
+    Validators.minLength(6),
+    // Validators.pattern( /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*#?&^_-]).{8,}/)
+  ]);
+
+  loginForm = this.buider.group({
+    password: this.password,
+    email: this.email
+  })
+
+  login(): void {
+    this.myEmail = this.email.value!;
+    this.myPass = this.password.value!;
+    // this.authLoginService.logon(this.myEmail, this.myPass);
   }
 }
