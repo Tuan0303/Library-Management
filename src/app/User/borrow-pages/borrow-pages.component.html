@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="leftcolumn mt-4 mb-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+  <div class="registartion-form m-3 " >
+    <form class="form_brrow_page" >
+      <!-- <form  [formGroup]="registerForm"> -->
+      <div class="row">
+        <div class="col-md-4 ">
+          <mat-form-field  appearance="outline">
+            <mat-label>Mã Sách </mat-label>
+            <input formControlName=""  matInput placeholder="Mã Sách">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-8">
+          <mat-form-field appearance="outline">
+            <mat-label>Tên Sách </mat-label>
+            <input formControlName="" matInput placeholder="Tên Sách">
+            <mat-icon matSuffix>book</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-12">
+          <mat-form-field appearance="outline">
+            <mat-label>Tên Tác Giả </mat-label>
+            <input formControlName="" matInput placeholder="Tên Tác Giả">
+            <mat-icon matSuffix>perm_contact_calendar</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label> Ngày Mượng  </mat-label>
+            <input formControlName="" matInput placeholder="Ngày Mượng ">
+            <mat-icon matSuffix>perm_contact_calendar</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label> Ngày Trả  </mat-label>
+            <input formControlName="" matInput placeholder="Ngày Trả ">
+            <mat-icon matSuffix>perm_contact_calendar</mat-icon>
+          </mat-form-field>
+        </div>
+</div>
+
+    <button  class="col-md-5 mt-4  p-1 rounded-4 clr clr1 fs-2" color="accent">Mượng Sách</button>
+    <!-- <button *ngIf="isUpdateActive" (click)="update()" class="mt-4" mat-raised-button color="accent">Update</button> -->
+  </form>
+  </div>
+</div>
+
+</div>
