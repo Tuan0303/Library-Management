@@ -20,6 +20,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { LoginPageComponent } from './User/login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterPageComponent } from './User/register-page/register-page.component';
+import { ProfilePageComponent } from './User/profile-page/profile-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { RegisterPageComponent } from './User/register-page/register-page.compon
     FooterComponent,
     DetailsPageComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
