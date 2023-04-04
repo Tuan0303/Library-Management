@@ -21,6 +21,8 @@ import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from '@angular/material/input';
+import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
+import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
 const MetarilaModuleDate = [
   MatDatepickerModule,
   MatNativeDateModule,
@@ -28,7 +30,6 @@ const MetarilaModuleDate = [
   BrowserAnimationsModule,
   MatInputModule
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,9 @@ const MetarilaModuleDate = [
     DetailsPageComponent,
     ErrorPageComponent,
     BorrowPagesComponent,
+    ForgotPasswordComponent,
+    BooksByThemeComponent,
+
 
   ],
   imports: [
