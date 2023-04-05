@@ -77,9 +77,9 @@
 
         <ul class="list" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
           <p><i class="fa-solid fa-list" style="color: #2980b9;"></i> Danh sách các chương:</p>
-          <li><a href="#">Chương 1: Tuấn đi đá gà</a></li>
-          <li><a href="#">Chương 2: Tuấn đi đánh bài</a></li>
-          <li><a href="#">Chương 3: Tuấn trốn nợ</a></li>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 1: Tuấn đi đá gà</a></li>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 2: Tuấn đi đánh bài</a></li>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 3: Tuấn trốn nợ</a></li>
         </ul>
 
         <ul class="list">
@@ -128,7 +128,7 @@
                     src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
                     alt="ảnh sách hot trong tháng"></a>
                 <div class="name-book">
-                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
                   <div>
                     <p>15</p>
                     <p>Lượt thuê</p>
@@ -153,7 +153,7 @@
                     src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
                     alt="ảnh sách hot trong tháng"></a>
                 <div class="name-book">
-                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
                   <div>
                     <p>15</p>
                     <p>Lượt thuê</p>
@@ -179,7 +179,7 @@
                     alt="ảnh sách hot trong tháng"></a>
 
                 <div class="name-book">
-                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
                   <div>
                     <p>15</p>
                     <p>Lượt thuê</p>

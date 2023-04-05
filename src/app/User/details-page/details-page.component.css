@@ -370,32 +370,38 @@ input[type="submit"] {
 
 .sub-menu a img {
   width: 100px;
-  margin: 0 10px 0 0 ;
+  margin: 0 10px 0 0;
   background-size: cover;
 }
 
-.name-book{
+.sub-menu a img:hover{
+  opacity: 0.5;
+    transition: opacity .5s ease;
+}
+
+.name-book {
   font-size: 15px;
   height: 100%;
 }
 
-.name-book div{
+.name-book div {
   float: left;
   display: flex;
   margin-bottom: 5px;
   color: #a79f9f;
 }
-.name-book div p{
+
+.name-book div p {
   margin-right: 5px;
 }
 
-.name-book a{
+.name-book a {
   color: #1e1116d4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.name-book a:hover{
+.name-book a:hover {
   color: red;
 }
 
@@ -524,6 +530,5 @@ input[type="submit"] {
 /* Chế độ tối */
 .dark-mode {
   background-color: #000000;
-  color: #ffffff;
-  
+  color: #ffffff !important;
 }

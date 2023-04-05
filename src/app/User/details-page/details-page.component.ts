@@ -16,6 +16,8 @@ export class DetailsPageComponent {
       this.quantity--;
     }
   }
+
+  //darkmode
   darkMode = false;
   toggleDarkMode() {
     this.darkMode = !this.darkMode;

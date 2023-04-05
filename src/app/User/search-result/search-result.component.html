@@ -1,26 +1,545 @@
-<body>
-    <app-header></app-header>
-    <div class="result">
-        <h1>Kết quả tìm kiếm</h1>
-    </div>
-    <div class="container">
-        <div class="card">
-            <img src="https://via.placeholder.com/400x600" alt="Ảnh sách">
-            <h2>Tên sách</h2>
-            <p>Tác giả: Tên tác giả</p>
-            <p>Giá: 100</p>
-            <a href="#">Mua sách</a>
+    <body>
+        <app-header style="z-index: 2;"></app-header>
+        <div class="result">
+            <h1>Kết quả tìm kiếm</h1>
         </div>
-        <div class="sidebar">
-            <h2>Mục lục</h2>
-            <ul>
-                <li><a href="#">Thể loại 1</a></li>
-                <li><a href="#">Thể loại 2</a></li>
-                <li><a href="#">Thể loại 3</a></li>
-                <li><a href="#">Thể loại 4</a></li>
-                <li><a href="#">Thể loại 5</a></li>
-            </ul>
+        <div class="container">
+            <div class="card">
+                <div class="card-content ">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident 5</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <a [routerLink]="['/details']">
+                        <img src="https://product.hstatic.net/200000343865/product/72_1d9e939f2d1d4d6c98b242b617ec3b8a_master.jpg"
+                            alt="Ảnh sách">
+                    </a>
+                    <div class="content">
+                        <h3>Naruto shident</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="TimeUpdate">
+                            <p>Cập nhật lúc: 14:20 03/03/2023</p>
+                        </div>
+                        <div class="view">
+                            <div class="view-rent">
+                                <i class="fa-solid fa-eye" style="color: #a4a7ad;"></i>
+                                <p>220</p>
+                            </div>
+                            <div class="view-rent">
+                                <i class="fa-regular fa-comment" style="color: #a4a7ad;"></i>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h2>Thể loại</h2>
+                <ul>
+                    <li><a href="#">Hành động</a></li>
+                    <li><a href="#">Tiểu thuyết</a></li>
+                    <li><a href="#">Phiêu lưu</a></li>
+                    <li><a href="#">Tình yêu</a></li>
+                    <li><a href="#">Cổ đại</a></li>
+                    <li><a href="#">Kinh dị</a></li>
+                    <li><a href="#">Chuyển sinh</a></li>
+                    <li><a href="#">Đam mỹ</a></li>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Ngôn tình</a></li>
+                    <li><a href="#">School</a></li>
+                    <li><a href="#">Việt Nam</a></li>
+                    <li><a href="#">Xuyên không</a></li>
+                    <li><a href="#">Thể thao</a></li>
+                    <li><a href="#">Trinh thám</a></li>
+                    <li><a href="#">Thiếu nhi</a></li>
+
+                </ul>
+            </div>
         </div>
-    </div>
-    <app-footer></app-footer>
-</body>
+        <app-footer style="margin-right: 16px;"></app-footer>
+    </body>
