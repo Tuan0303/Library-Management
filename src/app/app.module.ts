@@ -10,15 +10,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+
 import { FormsModule } from '@angular/forms';
 import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
-import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.component';
 import { SearchResultComponent } from './User/search-result/search-result.component';
+
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { DarkModeComponent } from './layouts/dark-mode/dark-mode.component';
+
 
 @NgModule({
   declarations: [
@@ -27,8 +33,8 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     FooterComponent,
     DetailsPageComponent,
     BackToTopComponent,
-    ToggleThemeComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    DarkModeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,10 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     MatButtonModule,
     MatMenuModule,
     MatExpansionModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
