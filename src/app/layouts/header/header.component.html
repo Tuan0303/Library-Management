@@ -35,16 +35,26 @@
                     fill-rule="evenodd"></path>
             </svg>
         </div>
-
+        <!-- <span cLass="form-inLine" >
+            <select cLass="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+                <option *ngFor="let language of translate.getLangs()" [value]="language"
+                    [selected]="language === translate.currentLang">
+                    {{ language }}
+                </option>
+            </select>
+        </span> -->
+        
         <div class="icons">
+        <app-translate style="z-index: 1;"></app-translate>
+
             <ul class="menu">
                 <div>
                     <mat-icon>sort</mat-icon>
-                    <li>Danh mục
+                    <li>{{'Danh mục' | translate}}
                         <ul class="sub-menu">
-                            <li><a href="#">danh mục 1 </a></li>
-                            <li><a href="#">danh mục 2</a></li>
-                            <li><a href="#">danh mục 3</a></li>
+                            <li><a href="#">{{'Danh mục 1' | translate}}  </a></li>
+                            <li><a href="#">{{'Danh mục 2' | translate}} </a></li>
+                            <li><a href="#">{{'Danh mục 3' | translate}} </a></li>
                         </ul>
                     </li>
                 </div>
@@ -53,15 +63,15 @@
 
             <a class="icon" href="#">
                 <mat-icon>shopping_cart</mat-icon> 
-                <p href="#">Giỏ sách</p>
+                <p href="#">{{'Giỏ sách' | translate}}</p>
             </a>
 
             <a class="icon" href="#">
                 <mat-icon>help_outline</mat-icon>
-                <p href="#">Trợ giúp</p>
+                <p href="#">{{'Trợ giúp' | translate}}</p>
             </a>
 
-            <button role="button">Đăng nhập</button>
+            <button role="button">{{'Đăng nhập' | translate}}</button>
         </div>
     </header>
 </body>
