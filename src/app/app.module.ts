@@ -25,6 +25,13 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { DarkModeComponent } from './layouts/dark-mode/dark-mode.component';
 
+//translate
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateComponent } from './layouts/translate/translate.component';
+import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +41,9 @@ import { DarkModeComponent } from './layouts/dark-mode/dark-mode.component';
     DetailsPageComponent,
     BackToTopComponent,
     SearchResultComponent,
-    DarkModeComponent
+    DarkModeComponent,
+    TranslateComponent,
+    LoadListBookComponent
   ],
   imports: [
     BrowserModule,
@@ -48,10 +57,23 @@ import { DarkModeComponent } from './layouts/dark-mode/dark-mode.component';
     FormsModule,
     AppRoutingModule,
     MatSlideToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //translate
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
+//translate
+export function httpTranslateLoader(http:HttpClient) {
+  return new TranslateHttpLoader(http);
+}

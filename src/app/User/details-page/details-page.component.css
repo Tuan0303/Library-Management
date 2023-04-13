@@ -64,6 +64,25 @@ h2 {
   grid-area: extra;
 }
 
+.btn-darkmode{
+  background-color: #37a6d677;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+    bottom: 230px;
+    right: 9px;
+}
+
+
+.fa-moon{
+  color: #0303038f; 
+  font-size: 25px;
+}
+
+.btn-darkmode:hover{
+  background-color: #7ec3e4d8;
+}
+
 img {
   max-width: 250px;
   float: left;
@@ -529,6 +548,6 @@ input[type="submit"] {
 
 /* Chế độ tối */
 .dark-mode {
-  background-color: #000000;
+  background-color: #201e1e;
   color: #ffffff !important;
 }

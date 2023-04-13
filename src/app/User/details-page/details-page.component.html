@@ -16,11 +16,11 @@
             alt="Book cover">
           <h2 [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Naruto Mashashi Kisimotio</h2>
           <div class="TimeUpdate">
-            <p>[Cập nhật lúc: 14:20 03/03/2023]</p>
+            <p>[{{'Cập nhật lúc' | translate}}: 14:20 03/03/2023]</p>
           </div>
           <div class="rent">
             <p>15</p>
-            <p>Lượt thuê</p>
+            <p>{{'Lượt thuê' | translate}}</p>
           </div>
           <div class="rating">
             <div class="stars">
@@ -30,95 +30,99 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <div class="num-ratings">(2 đánh giá)</div>
+            <div class="num-ratings">(2 {{'Đánh giá' | translate}})</div>
           </div>
 
           <table>
             <tr>
-              <td class="width"><i class="fa-solid fa-user" style="color: #a29d9d;"></i> Tác giả:</td>
+              <td class="width"><i class="fa-solid fa-user" style="color: #a29d9d;"></i> {{'Tác giả' | translate}}:</td>
               <td>Nguyễn Quốc Tuấn</td>
             </tr>
             <tr>
-              <td class="width"><i class="fa-solid fa-house" style="color: #a29d9d;"></i> Nhà xuất bản:</td>
+              <td class="width"><i class="fa-solid fa-house" style="color: #a29d9d;"></i> {{'Nhà xuất bản' |
+                translate}}:</td>
               <td>Nhà xuất bản Kim Đồng</td>
             </tr>
             <tr>
-              <td class="width"><i class="fa-solid fa-calendar-days" style="color: #a29d9d;"></i> Ngày xuất bản:</td>
+              <td class="width"><i class="fa-solid fa-calendar-days" style="color: #a29d9d;"></i> {{'Ngày xuất bản' |
+                translate}}:</td>
               <td>19/03/1682</td>
             </tr>
             <tr>
-              <td class="width"><i class="fa-solid fa-pen-nib" style="color: #a29d9d;"></i> Thể loại:</td>
+              <td class="width"><i class="fa-solid fa-pen-nib" style="color: #a29d9d;"></i> {{'Thể loại' | translate}}:
+              </td>
               <td>
-                <a href="#">Hành động</a>
-                <a href="#">Tình cảm</a>
-                <a href="#">Phiêu lưu</a>
-                <button (click)="toggleDarkMode()">Chế độ tối</button>
+                <a href="#">{{'Hành động' | translate}}</a>
+                <a href="#">{{'Tình cảm' | translate}}</a>
+                <a href="#">{{'Phiêu lưu' | translate}}</a>
+
+                <!-- darkmode -->
+                <button class="btn-darkmode" (click)="toggleDarkMode()"><i class="fa-regular fa-moon"></i></button>
               </td>
             </tr>
           </table>
 
-
-
           <div class="all">
             <!-- tăng giảm số lượng -->
             <div class="quantity">
-              <h4>Số lượng:</h4>
+              <h4>{{'Số lượng' | translate}}:</h4>
               <button (click)="decreaseQuantity()">-</button>
               <input type="text" [(ngModel)]="quantity">
               <button (click)="increaseQuantity()">+</button>
             </div>
 
             <div class="book-rental">
-              <button class="btn-addcart"><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ sách</button>
-              <button class="btn-rental">Thuê sách</button>
+              <button class="btn-addcart"><i class="fa-solid fa-cart-shopping"></i> {{'Thêm vào giỏ sách' |
+                translate}}</button>
+              <button class="btn-rental">{{'Thuê sách' | translate}}</button>
             </div>
           </div>
         </div>
 
         <ul class="list" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
-          <p><i class="fa-solid fa-list" style="color: #2980b9;"></i> Danh sách các chương:</p>
-          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 1: Tuấn đi đá gà</a></li>
-          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 2: Tuấn đi đánh bài</a></li>
-          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}"href="#">Chương 3: Tuấn trốn nợ</a></li>
+          <p><i class="fa-solid fa-list" style="color: #2980b9;"></i> {{'Danh sách các chương' | translate}}:</p>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}" href="#">Chương 1: Tuấn đi đá gà</a></li>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}" href="#">Chương 2: Tuấn đi đánh bài</a>
+          </li>
+          <li><a [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}" href="#">Chương 3: Tuấn trốn nợ</a></li>
         </ul>
 
         <ul class="list">
-          <p><i class="fa-solid fa-circle-info" style="color: #2980b9;"></i> Mô tả:</p>
-          <li>Mười hai năm trước khi bộ truyện này bắt đầu, con Hồ Ly Chín Đuôi đã tấn công ngôi
-            làng ninja làng Lá
+          <p><i class="fa-solid fa-circle-info" style="color: #2980b9;"></i> {{'Mô tả' | translate}}:</p>
+          <li>{{'Mười hai năm trước khi bộ truyện này bắt đầu, con Hồ Ly Chín Đuôi đã tấn công ngôi làng ninja làng Lá
             (木ノ葉隠れ Konohagakure?). Đủ sức mạnh để khiến sóng thần nổi dậy và san bằng núi non chỉ với một trong số chín
             cái đuôi của nó, nó đã gây nên sự hỗn loạn tột cùng và giết chóc nhiều người, cho tới khi người lãnh đạo của
             làng Lá – ngài Hokage Đệ Tứ (Namikaze Minato)đã hi sinh để phong ấn con quái vật bằng thuật cấm: Kin Jutsu
-            Ogi! "Shiki Fuin" (Một thuật cấm phải đánh đổi bằng tính mạng) vào người Naruto khi cậu ta mới sinh. Hokage
-            Đệ
+            Ogi! Shiki Fuin (Một thuật cấm phải đánh đổi bằng tính mạng) vào người Naruto khi cậu ta mới sinh. Hokage Đệ
             Tứ, người được vinh danh vì đã phong ấn con yêu hồ li, mong muốn Naruto được người dân tôn trọng vì đã là
-            thân
-            xác chứa đựng con quái vật.</li>
+            thân xác chứa đựng con quái vật.' | translate}}</li>
         </ul>
 
 
         <form>
-          <h3>Đánh giá của bạn</h3>
+          <h3>{{'Đánh giá của bạn' | translate}}</h3>
           <textarea placeholder="Nhập đánh giá của bạn"></textarea>
-          <button class="button-29" role="button">Gửi đánh giá</button>
+          <button class="button-29" role="button">{{'Gửi đánh giá' | translate}}</button>
         </form>
 
-        <h3>Đánh giá của người dùng</h3>
+        <h3>{{'Đánh giá của người dùng' | translate}}</h3>
 
         <div class="comment">
           <p>truyện khá là hay</p>
-          <div class="comment-info">Bởi <span class="user">Người dùng 1</span> vào ngày 01/01/2023</div>
+          <div class="comment-info">{{'Bởi' | translate}} <span class="user">Người dùng 1</span> {{'vào ngày' |
+            translate}} 01/01/2023</div>
         </div>
 
         <div class="comment">
           <p>Rất là hay luôn </p>
-          <div class="comment-info">Bởi <span class="user">Người dùng 2</span> vào ngày 02/01/2023</div>
+          <div class="comment-info">{{'Bởi' | translate}} <span class="user">Người dùng 2</span> {{'vào ngày' |
+            translate}} 02/01/2023</div>
         </div>
 
       </main>
       <div class="extra">
 
-        <p class="top">Top tháng</p>
+        <p class="top">{{'Top tháng' | translate}}</p>
         <li>
           <ul class="menu" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
             <ul>
@@ -128,10 +132,11 @@
                     src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
                     alt="ảnh sách hot trong tháng"></a>
                 <div class="name-book">
-                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long
+                    bạo chúa</a>
                   <div>
                     <p>15</p>
-                    <p>Lượt thuê</p>
+                    <p>{{'Lượt thuê'| translate}}</p>
                   </div>
                   <div class="rating">
                     <div class="stars">
@@ -153,10 +158,11 @@
                     src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
                     alt="ảnh sách hot trong tháng"></a>
                 <div class="name-book">
-                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long
+                    bạo chúa</a>
                   <div>
                     <p>15</p>
-                    <p>Lượt thuê</p>
+                    <p>{{'Lượt thuê'| translate}}</p>
                   </div>
                   <div class="rating">
                     <div class="stars">
@@ -179,10 +185,11 @@
                     alt="ảnh sách hot trong tháng"></a>
 
                 <div class="name-book">
-                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long bạo chúa</a>
+                  <a href="#" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Chúa tể của loài khủng long
+                    bạo chúa</a>
                   <div>
                     <p>15</p>
-                    <p>Lượt thuê</p>
+                    <p>{{'Lượt thuê'| translate}}</p>
                   </div>
                   <div class="rating">
                     <div class="stars">
