@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SearchResultComponent {
 
+  //darkmode
+  darkMode = localStorage.getItem('isDarkMode') === 'false';
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+  }
 }

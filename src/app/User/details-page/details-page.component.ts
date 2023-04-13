@@ -9,7 +9,9 @@ export class DetailsPageComponent {
   //xử lý tăng giảm số lượng sách
   quantity: number = 1;
   increaseQuantity() {
-    this.quantity++;
+    if (this.quantity < 10) {
+      this.quantity++;
+    }
   }
   decreaseQuantity() {
     if (this.quantity > 1) {

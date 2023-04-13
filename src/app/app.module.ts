@@ -30,6 +30,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateComponent } from './layouts/translate/translate.component';
+import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { TranslateComponent } from './layouts/translate/translate.component';
     BackToTopComponent,
     SearchResultComponent,
     DarkModeComponent,
-    TranslateComponent
+    TranslateComponent,
+    LoadListBookComponent
   ],
   imports: [
     BrowserModule,

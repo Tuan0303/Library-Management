@@ -35,26 +35,23 @@
                     fill-rule="evenodd"></path>
             </svg>
         </div>
-        <!-- <span cLass="form-inLine" >
-            <select cLass="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
-                <option *ngFor="let language of translate.getLangs()" [value]="language"
-                    [selected]="language === translate.currentLang">
-                    {{ language }}
-                </option>
-            </select>
-        </span> -->
         
         <div class="icons">
         <app-translate style="z-index: 1;"></app-translate>
-
             <ul class="menu">
                 <div>
                     <mat-icon>sort</mat-icon>
                     <li>{{'Danh mục' | translate}}
                         <ul class="sub-menu">
                             <li><a href="#">{{'Danh mục 1' | translate}}  </a></li>
-                            <li><a href="#">{{'Danh mục 2' | translate}} </a></li>
-                            <li><a href="#">{{'Danh mục 3' | translate}} </a></li>
+                            <li class="has-sub-menu">
+                                <a href="#">{{'Danh mục 2' | translate}} </a>
+                                <ul class="sub-menu-mini">
+                                    <li><a href="#">{{'Mục con 1' | translate}}</a></li>
+                                    <li><a href="#">{{'Mục con 2' | translate}}</a></li>
+                                </ul>
+                            </li >
+                            <li ><a href="#">{{'Danh mục 3' | translate}} </a></li>
                         </ul>
                     </li>
                 </div>

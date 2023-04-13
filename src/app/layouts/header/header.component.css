@@ -74,7 +74,7 @@ header {
     border-radius: 10px;
 }
 
-.icon mat-icon{
+.icon mat-icon {
     margin-right: 5px;
 }
 
@@ -115,7 +115,7 @@ a {
     color: white;
 }
 
-.menu mat-icon{
+.menu mat-icon {
     margin-right: 5px;
 }
 
@@ -126,7 +126,7 @@ a {
 
 }
 
-.menu div:hover  {
+.menu div:hover {
     background-color: rgba(25, 21, 21, 0.692);
     color: white;
     border-radius: 10px 10px 0 0;
@@ -141,20 +141,63 @@ a {
     position: relative;
 }
 
+/* Thêm pseudo-element cho danh mục 2 */
+.has-sub-menu::after {
+    content: "\25B6";
+    font-size: 10px;
+    align-items: center;
+    padding-right: 10px;
+    position: absolute;
+    right: -5px;
+    top: 5px;
+}
+
+.sub-menu-mini {
+    background-color: rgba(25, 21, 21, 0.692);
+    box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 0px;
+    right: -87px;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.sub-menu-mini li {
+    padding: 0 5px;
+}
+
+.sub-menu li:hover .sub-menu-mini {
+    display: block;
+}
+
 .sub-menu {
     display: none;
+    width: 100%;
     position: absolute;
     top: 22px;
-    left: -57px;
-    padding: 10px;
+    left: -39px;
     width: 122px;
-    box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.16);
-    border-radius: 10px 0 10px 10px;
+    padding: 0 1px 10px 0px;
+    box-shadow: 4px 11px 10px rgb(0 0 0 / 16%);
     background-color: rgba(25, 21, 21, 0.692);
 }
 
+
 .sub-menu li a {
     color: white;
+}
+
+.sub-menu li {
+    display: block;
+    padding-top: 5px 20px 0 0;
+    width: 100%;
+    /* Đặt chiều rộng của thẻ danh mục con bằng 100% */
+    box-sizing: border-box;
+    /* Tính toán kích thước đúng */
+}
+
+.sub-menu li:hover {
+    background-color: #a8589d;
 }
 
 .menu div {
@@ -162,14 +205,11 @@ a {
     align-items: center;
 }
 
+
 .menu div:hover .sub-menu {
     display: block;
 }
 
-.sub-menu li {
-    display: block;
-    padding: 10px 0 0 0;
-}
 
 a {
     color: #333;
@@ -246,7 +286,6 @@ nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
-
 }
 
 nav li {
@@ -262,7 +301,6 @@ nav ul ul {
     top: 50px;
     left: 0;
     background-color: #1b858d;
-
 }
 
 nav ul li:hover>ul {
@@ -288,9 +326,6 @@ body {
 .area {
     background: #4e54c8;
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-
-
-
 }
 
 .circles {
@@ -397,7 +432,6 @@ body {
 } */
 
 @keyframes animate {
-
     0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;

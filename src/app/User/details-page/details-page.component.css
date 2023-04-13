@@ -548,6 +548,6 @@ input[type="submit"] {
 
 /* Chế độ tối */
 .dark-mode {
-  background-color: #2b2929;
+  background-color: #201e1e;
   color: #ffffff !important;
 }
