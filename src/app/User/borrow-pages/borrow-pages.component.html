@@ -6,38 +6,56 @@
       <div class="row">
         <div class="col-md-4 ">
           <mat-form-field  appearance="outline">
+            <mat-label>Tên người mượng </mat-label>
+            <input formControlName=""  matInput >
+            <mat-icon matSuffix>perm_identity</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-8 ">
+          <mat-form-field  appearance="outline">
+            <mat-label>Mobile </mat-label>
+            <input formControlName="" placeholder="SDT"  matInput >
+            <mat-icon matSuffix>erm_phone_msg</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4 ">
+
+
+          <mat-form-field  appearance="outline">
             <mat-label>Mã Sách </mat-label>
-            <input formControlName=""  matInput placeholder="Mã Sách">
-            <mat-icon matSuffix>book</mat-icon>
+            <input formControlName=""  matInput >
+            <mat-icon matSuffix>code</mat-icon>
           </mat-form-field>
         </div>
         <div class="col-md-8">
           <mat-form-field appearance="outline">
             <mat-label> Tên Tác Giả </mat-label>
-            <input formControlName="" matInput placeholder=" Tên Tác Giả">
+            <input formControlName="" matInput >
             <mat-icon matSuffix> perm_contact_calendar</mat-icon>
           </mat-form-field>
         </div>
         <div class="col-md-12">
           <mat-form-field appearance="outline">
             <mat-label>Tên Sách </mat-label>
-            <input formControlName="" matInput placeholder="Tên Sách">
+            <input formControlName="" matInput >
             <mat-icon matSuffix>book</mat-icon>
           </mat-form-field>
         </div>
 
         <div class="col-md-6">
           <mat-form-field appearance="outline">
-            <mat-label> Ngày Mượng </mat-label>
-            <input formControlName="" matInput placeholder="Ngày Mượng ">
-            <mat-icon matSuffix>date_range</mat-icon>
+            <mat-label>Ngày mượng </mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
         </div>
         <div class="col-md-6">
           <mat-form-field appearance="outline">
-            <mat-label> Ngày Trả  </mat-label>
-            <input formControlName="" matInput placeholder="Ngày Trả ">
-            <mat-icon matSuffix>date_range</mat-icon>
+            <mat-label>Ngày trả </mat-label>
+            <input matInput [matDatepicker]="data">
+            <mat-datepicker-toggle matIconSuffix [for]="data"></mat-datepicker-toggle>
+            <mat-datepicker #data></mat-datepicker>
           </mat-form-field>
         </div>
 </div>

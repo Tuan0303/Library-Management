@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="registartion-form m-3 p-4">
+    <form>
+      <div class="row">
+        <div class="col-md-3">
+          <mat-form-field appearance="outline">
+            <mat-label>Mã Sách</mat-label>
+            <input matInput />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-9">
+          <mat-form-field appearance="outline">
+            <mat-label>Tên sách </mat-label>
+            <input matInput />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Tên tác giả </mat-label>
+            <input matInput />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Mobile</mat-label>
+            <input matInput placeholder="Mobile" />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field>
+            <div>
+              <mat-toolbar>
+                <!-- Display files names -->
+                <input matInput [(ngModel)]="fileAttr" readonly name="name" />
+                <!-- Browse Button -->
+                <button mat-flat-button color="primary">Browse File</button>
+              </mat-toolbar>
+              <!-- Fetch selected filed on change -->
+              <input
+                type="file"
+                #fileInput
+                id="uploadFile"
+                (change)="uploadFileEvt($event)"
+                name="uploadFile"
+                multiple="multiple"
+                accept="image/*"
+              />
+            </div>
+          </mat-form-field>
+        </div>
+        <div class="col-md-12">
+          <editor
+          apiKey="Get your free API key at tiny.cloud and paste it here"
+          [init]="{
+            icons: 'material',
+            skin: 'borderless',
+            plugins: 'wordcount',
+            menubar: false,
+            min_height: 150
+          }"
+        ></editor>
+        </div>
+      </div>
+      <button
+        *ngIf="!isUpdateActive"
+        (click)="submit()"
+        class="mt-4"
+        mat-raised-button
+        color="accent"
+      >
+        Create
+      </button>
+      <button
+        *ngIf="isUpdateActive"
+        (click)="update()"
+        class="mt-4"
+        mat-raised-button
+        color="accent"
+      >
+        Update
+      </button>
+    </form>
+  </div>
+</div>

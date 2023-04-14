@@ -7,6 +7,7 @@ import { ErrorPageComponent } from './User/error-page/error-page.component';
 import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
 import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
 import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
+import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'book-by-theme', component: BooksByThemeComponent },
   { path: 'borrow-page', component: BorrowPagesComponent },
   { path: 'forgot-page', component: ForgotPasswordComponent },
-  { path: '**', component: ErrorPageComponent }
+  { path: 'edit-create-book-modal', component: CreateEditBookModalComponent },
+  // { path: '', component: ErrorPageComponent }
 ];
 
 @NgModule({
