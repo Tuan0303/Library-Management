@@ -5,6 +5,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { LoginPageComponent } from './User/login-page/login-page.component';
 import { RegisterPageComponent } from './User/register-page/register-page.component';
+import { DashboardPageComponent } from './Admin/dashboard-page/dashboard-page.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: 'details', component: DetailsPageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
+
+  { path: 'admin/dashboard', component: DashboardPageComponent },
 ];
 
 @NgModule({
