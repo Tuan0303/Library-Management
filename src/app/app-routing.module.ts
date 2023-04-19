@@ -8,6 +8,7 @@ import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.comp
 import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
 import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
 import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
+import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/create-edit-user-modal.component';
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'borrow-page', component: BorrowPagesComponent },
   { path: 'forgot-page', component: ForgotPasswordComponent },
   { path: 'edit-create-book-modal', component: CreateEditBookModalComponent },
+  { path: 'edit-create-user-modal', component: CreateEditUserModalComponent },
   // { path: '', component: ErrorPageComponent }
 ];
 

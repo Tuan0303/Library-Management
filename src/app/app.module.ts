@@ -42,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
 import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
 import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
+import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/create-edit-user-modal.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/cre
     ForgotPasswordComponent,
     BooksByThemeComponent,
     CreateEditBookModalComponent,
+    CreateEditUserModalComponent,
 
 
   ],
