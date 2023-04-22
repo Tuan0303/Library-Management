@@ -1,11 +1,11 @@
 footer {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to left, #c6ffdd, #fbd786);
-    ;
+    background: linear-gradient(to right,   #0070DA, #0083D6, #0091C0, #009CA0, #00A37E);
+
     padding: 10px 30px 10px 30px;
     font-size: 14px;
-    color: black;
+    color: #FEFEDF;
     font-family: Arial, sans-serif;
     margin: -16px;
     margin-right: -24px;
@@ -27,7 +27,7 @@ footer {
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #333333;
+    color: #FEFEDF;
     line-height: 1.5em;
     letter-spacing: 1px;
     text-align: center;
@@ -63,12 +63,12 @@ footer {
 }
 
 .fa:hover {
-    filter: drop-shadow(1px 1px 5px #ecf23d);
+    filter: drop-shadow(1px 1px 5px #09e7e3);
 }
 
 li a {
     text-decoration: none;
-    color: black;
+    color: #FEFEDF;
 }
 
 .color-icon {
@@ -78,7 +78,7 @@ li a {
 
 .link:hover {
     background-color: transparent;
-    color: #2979ff;
+    color: #f93260;
 }
 
 @media only screen and (min-width: 768px) {

@@ -8,7 +8,7 @@
 
 <body>
   <div class="wrapper">
-    <app-header></app-header>
+    <app-header style="z-index: 999; position: absolute;"></app-header>
     <div class="container">
       <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
         <div class="main-content">
@@ -18,7 +18,7 @@
           <div class="TimeUpdate">
             <p>[{{'Cập nhật lúc' | translate}}: 14:20 03/03/2023]</p>
           </div>
-          <div class="rent">
+           <div class="rent">
             <p>15</p>
             <p>{{'Lượt thuê' | translate}}</p>
           </div>
