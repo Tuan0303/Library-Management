@@ -1,3 +1,6 @@
+*{
+    z-index: 999;
+}
 footer {
     display: flex;
     justify-content: space-between;

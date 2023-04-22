@@ -9,7 +9,7 @@
 <body>
   <div class="wrapper">
     <app-header style="z-index: 999; position: absolute;"></app-header>
-    <div class="container">
+    <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
       <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
         <div class="main-content">
           <img src="https://salt.tikicdn.com/cache/w1200/ts/product/9f/d0/90/bfe7bec5b6d9704078a80692874e3279.jpg"
@@ -63,7 +63,6 @@
           </table>
 
           <div class="all">
-            <!-- tăng giảm số lượng -->
             <div class="quantity">
               <h4>{{'Số lượng' | translate}}:</h4>
               <button (click)="decreaseQuantity()">-</button>

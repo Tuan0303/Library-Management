@@ -9,6 +9,7 @@ import { LoginPageComponent } from './User/login-page/login-page.component';
 import { RegisterPageComponent } from './User/register-page/register-page.component';
 import { DashboardPageComponent } from './Admin/dashboard-page/dashboard-page.component';
 import { ProfilePageComponent } from './User/profile-page/profile-page.component';
+import { UserListPageComponent } from './Admin/user-list-page/user-list-page.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
   { path: 'profile', component: ProfilePageComponent },
+  { path: 'listuser', component: UserListPageComponent },
 
   { path: 'admin', component: DashboardPageComponent },
 
