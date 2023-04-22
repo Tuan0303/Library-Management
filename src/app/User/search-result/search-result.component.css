@@ -1,10 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0 -8px;
-    padding: 0;
+    padding-right: 10px;
     background-color: #f1f1f1;
     display: grid;
     grid-row: auto;
+    max-width: 1363px;
 }
 
 .result {
@@ -26,33 +27,38 @@ body {
 }
 
 .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Định nghĩa số cột và kích thước tối thiểu/tối đa cho mỗi cột */
+    gap: 10px;
     max-width: 990px;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #fff;
     box-shadow: 0px 0px 10px #ddd;
     padding: 20px;
     margin-right: 20px;
-    flex-grow: 1;
     grid-area: card;
 }
 
+h1 {
+    margin-top: 32px;
+}
+
 .card-content {
-    max-width: 100%;
+    max-width: 201px;
     height: auto;
     margin: 0 0 15px 15px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    flex-grow: 1;
 
 }
 
 .card-content img {
     width: 200px;
     max-height: 222px;
-    height: auto; 
+    height: auto;
     z-index: 1;
 }
 
@@ -185,6 +191,8 @@ body {
     border-radius: 50%;
     border: none;
     position: fixed;
+    width: 31px;
+    height: 31px;
     bottom: 230px;
     right: 9px;
     color: #3333339b;
@@ -205,4 +213,8 @@ body {
 .dark-mode {
     background-color: #353131 !important;
     color: #ffffff !important;
+}
+
+app-footer {
+    margin-right: 14px;
 }

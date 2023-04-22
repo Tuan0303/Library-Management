@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
   { path: 'profile', component: ProfilePageComponent },
-
+  { path: 'listuser', component: UserListPageComponent },
   { path: 'admin', component: DashboardPageComponent },
   { path: 'admin/users', component: UserListPageComponent },
 ];
