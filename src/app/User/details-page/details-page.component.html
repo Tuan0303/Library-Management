@@ -1,61 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<html [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
 </head>
 
 <body>
   <div class="wrapper">
     <app-header></app-header>
     <div class="container">
-      <main class="main">
+      <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
         <div class="main-content">
           <img src="https://salt.tikicdn.com/cache/w1200/ts/product/9f/d0/90/bfe7bec5b6d9704078a80692874e3279.jpg"
             alt="Book cover">
-          <h2>Naruto Mashashi Kisimotio</h2>
+          <h2 [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Naruto Mashashi Kisimotio</h2>
           <div class="TimeUpdate">
             <p>[Cập nhật lúc: 14:20 03/03/2023]</p>
           </div>
-          <div>
-            <p><i class="fa-solid fa-user" style="color: #000000;"></i> Tác giả:</p>
-            <p>Nguyễn Quốc Tuấn</p>
+          <div class="rent">
+            <p>15</p>
+            <p>Lượt thuê</p>
+          </div>
+          <div class="rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="num-ratings">(2 đánh giá)</div>
           </div>
 
-          <div>
-            <p><i class="fa-solid fa-house" style="color: #000000;"></i> Nhà xuất bản:</p>
-            <p>Nhà xuất bản Kim Đồng</p>
-          </div>
+          <table>
+            <tr>
+              <td class="width"><i class="fa-solid fa-user" style="color: #a29d9d;"></i> Tác giả:</td>
+              <td>Nguyễn Quốc Tuấn</td>
+            </tr>
+            <tr>
+              <td class="width"><i class="fa-solid fa-house" style="color: #a29d9d;"></i> Nhà xuất bản:</td>
+              <td>Nhà xuất bản Kim Đồng</td>
+            </tr>
+            <tr>
+              <td class="width"><i class="fa-solid fa-calendar-days" style="color: #a29d9d;"></i> Ngày xuất bản:</td>
+              <td>19/03/1682</td>
+            </tr>
+            <tr>
+              <td class="width"><i class="fa-solid fa-pen-nib" style="color: #a29d9d;"></i> Thể loại:</td>
+              <td>
+                <a href="#">Hành động</a>
+                <a href="#">Tình cảm</a>
+                <a href="#">Phiêu lưu</a>
+                <button (click)="toggleDarkMode()">Chế độ tối</button>
+              </td>
+            </tr>
+          </table>
 
-          <div>
-            <p><i class="fa-solid fa-calendar-days" style="color: #000000;"></i> Ngày xuất bản:</p>
-            <p>19/03/1682</p>
-          </div>
 
-          <div>
-            <p><i class="fa-solid fa-pen-nib" style="color: #000000;"></i> Thể loại:</p>
-            <a href="#">Hành động</a>
-            <a href="#">Tình cảm</a>
-            <a href="#">Phưu lưu</a>
+
+          <div class="all">
+            <!-- tăng giảm số lượng -->
+            <div class="quantity">
+              <h4>Số lượng:</h4>
+              <button (click)="decreaseQuantity()">-</button>
+              <input type="text" [(ngModel)]="quantity">
+              <button (click)="increaseQuantity()">+</button>
+            </div>
+
+            <div class="book-rental">
+              <button class="btn-addcart"><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ sách</button>
+              <button class="btn-rental">Thuê sách</button>
+            </div>
           </div>
-          <button class="btn-read">Xem sách</button>
         </div>
 
-        <ul class="list">
-          <p><i class="fa-solid fa-list" style="color: #000000;"></i> Danh sách các chương:</p>
+        <ul class="list" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
+          <p><i class="fa-solid fa-list" style="color: #2980b9;"></i> Danh sách các chương:</p>
           <li><a href="#">Chương 1: Tuấn đi đá gà</a></li>
           <li><a href="#">Chương 2: Tuấn đi đánh bài</a></li>
           <li><a href="#">Chương 3: Tuấn trốn nợ</a></li>
         </ul>
 
         <ul class="list">
-          <p><i class="fa-solid fa-circle-info" style="color: #000000;"></i> Mô tả:</p>
+          <p><i class="fa-solid fa-circle-info" style="color: #2980b9;"></i> Mô tả:</p>
           <li>Mười hai năm trước khi bộ truyện này bắt đầu, con Hồ Ly Chín Đuôi đã tấn công ngôi
             làng ninja làng Lá
             (木ノ葉隠れ Konohagakure?). Đủ sức mạnh để khiến sóng thần nổi dậy và san bằng núi non chỉ với một trong số chín
@@ -67,16 +95,7 @@
             thân
             xác chứa đựng con quái vật.</li>
         </ul>
-        <div class="rating">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <div class="num-ratings">(2 đánh giá)</div>
-        </div>
+
 
         <form>
           <h3>Đánh giá của bạn</h3>
@@ -95,57 +114,114 @@
           <p>Rất là hay luôn </p>
           <div class="comment-info">Bởi <span class="user">Người dùng 2</span> vào ngày 02/01/2023</div>
         </div>
+
       </main>
-      <main class="extra">
+      <div class="extra">
+
         <p class="top">Top tháng</p>
         <li>
-          <ul class="menu">
-            <li class="sub-menu" >
-              <p>01</p>
-              <a href="#"><img
-                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
-                  alt="ảnh sách hot trong tháng"></a>
-              <a href="#">Fairy Tail</a>
-            </li>
+          <ul class="menu" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
+            <ul>
+              <li class="sub-menu">
+                <p class="number">01</p>
+                <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
+                    alt="ảnh sách hot trong tháng"></a>
+                <div class="name-book">
+                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <div>
+                    <p>15</p>
+                    <p>Lượt thuê</p>
+                  </div>
+                  <div class="rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
-            <li class="sub-menu" >
-              <p>02</p>
-              <a href="#"><img
-                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
-                  alt="ảnh sách hot trong tháng"></a>
-              <a href="#">Chúa tể của loài khủng long bạo chúa</a>
-            </li>
+            <ul>
+              <li class="sub-menu">
+                <p class="number">02</p>
+                <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
+                    alt="ảnh sách hot trong tháng"></a>
+                <div class="name-book">
+                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <div>
+                    <p>15</p>
+                    <p>Lượt thuê</p>
+                  </div>
+                  <div class="rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
-            <li class="sub-menu" >
-              <p>03</p>
-              <a href="#"><img
-                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
-                  alt="ảnh sách hot trong tháng"></a>
-              <a href="#">Fairy Tail</a>
-            </li>
+            <ul>
+              <li class="sub-menu">
+                <p class="number">03</p>
+                <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e1/FairyTail-Volume_1_Cover.jpg/220px-FairyTail-Volume_1_Cover.jpg"
+                    alt="ảnh sách hot trong tháng"></a>
+
+                <div class="name-book">
+                  <a href="#">Chúa tể của loài khủng long bạo chúa</a>
+                  <div>
+                    <p>15</p>
+                    <p>Lượt thuê</p>
+                  </div>
+                  <div class="rating">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </ul>
         </li>
 
         <!-- <li>Top tuần
-          <ul class="sub-menu">
-            <li><a href="#">danh mục 1 </a></li>
-            <li><a href="#">danh mục 2</a></li>
-            <li><a href="#">danh mục 3</a></li>
-          </ul>
-        </li>
+            <ul class="sub-menu">
+              <li><a href="#">danh mục 1 </a></li>
+              <li><a href="#">danh mục 2</a></li>
+              <li><a href="#">danh mục 3</a></li>
+            </ul>
+          </li>
 
-        <li>Top ngày
-          <ul class="sub-menu">
-            <li><a href="#">danh mục 1 </a></li>
-            <li><a href="#">danh mục 2</a></li>
-            <li><a href="#">danh mục 3</a></li>
-          </ul>
-        </li> -->
-      </main>
+          <li>Top ngày
+            <ul class="sub-menu">
+              <li><a href="#">danh mục 1 </a></li>
+              <li><a href="#">danh mục 2</a></li>
+              <li><a href="#">danh mục 3</a></li>
+            </ul>
+          </li> -->
+
+
+      </div>
     </div>
-    <app-footer></app-footer>
-  </div>
 
+  </div>
 </body>
+<app-back-to-top></app-back-to-top>
+<app-footer></app-footer>
 
 </html>

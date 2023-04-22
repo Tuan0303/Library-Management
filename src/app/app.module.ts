@@ -14,6 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+<<<<<<< HEAD
 import { ErrorPageComponent } from './User/error-page/error-page.component';
 import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
 // meterial
@@ -43,6 +44,13 @@ import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.
 import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
 import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
 import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/create-edit-user-modal.component';
+=======
+
+import { FormsModule } from '@angular/forms';
+import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
+import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.component';
+import { SearchResultComponent } from './User/search-result/search-result.component';
+>>>>>>> main
 
 @NgModule({
   declarations: [
@@ -50,6 +58,7 @@ import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/cre
     HeaderComponent,
     FooterComponent,
     DetailsPageComponent,
+<<<<<<< HEAD
     ErrorPageComponent,
     BorrowPagesComponent,
     ForgotPasswordComponent,
@@ -58,6 +67,11 @@ import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/cre
     CreateEditUserModalComponent,
 
 
+=======
+    BackToTopComponent,
+    ToggleThemeComponent,
+    SearchResultComponent
+>>>>>>> main
   ],
   imports: [
     BrowserModule,
@@ -68,6 +82,7 @@ import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/cre
     MatButtonModule,
     MatMenuModule,
     MatExpansionModule,
+<<<<<<< HEAD
     //  metarila
     MatDatepickerModule,
     MatNativeDateModule,
@@ -88,6 +103,9 @@ import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/cre
     HttpClientModule,
     FormsModule,
     EditorModule
+=======
+    FormsModule
+>>>>>>> main
   ],
   providers: [],
   bootstrap: [AppComponent],

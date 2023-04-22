@@ -6,5 +6,18 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./details-page.component.css']
 })
 export class DetailsPageComponent {
-  
+  //xử lý tăng giảm số lượng sách
+  quantity: number = 1;
+  increaseQuantity() {
+    this.quantity++;
+  }
+  decreaseQuantity() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
+  darkMode = false;
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+  }
 }
