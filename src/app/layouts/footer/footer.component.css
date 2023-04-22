@@ -78,7 +78,7 @@ li a {
 
 .link:hover {
     background-color: transparent;
-    color: #2979ff;
+    color: #f93260;
 }
 
 @media only screen and (min-width: 768px) {
