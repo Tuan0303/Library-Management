@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -14,7 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DetailsPageComponent } from './User/details-page/details-page.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-<<<<<<< HEAD
+
 import { ErrorPageComponent } from './User/error-page/error-page.component';
 import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
 // meterial
@@ -44,13 +44,12 @@ import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.
 import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
 import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
 import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/create-edit-user-modal.component';
-=======
+
 
 import { FormsModule } from '@angular/forms';
 import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
 import { ToggleThemeComponent } from './layouts/toggle-theme/toggle-theme.component';
 import { SearchResultComponent } from './User/search-result/search-result.component';
->>>>>>> main
 
 @NgModule({
   declarations: [
@@ -58,7 +57,7 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     HeaderComponent,
     FooterComponent,
     DetailsPageComponent,
-<<<<<<< HEAD
+
     ErrorPageComponent,
     BorrowPagesComponent,
     ForgotPasswordComponent,
@@ -67,11 +66,11 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     CreateEditUserModalComponent,
 
 
-=======
+
     BackToTopComponent,
     ToggleThemeComponent,
     SearchResultComponent
->>>>>>> main
+
   ],
   imports: [
     BrowserModule,
@@ -82,7 +81,7 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     MatButtonModule,
     MatMenuModule,
     MatExpansionModule,
-<<<<<<< HEAD
+
     //  metarila
     MatDatepickerModule,
     MatNativeDateModule,
@@ -102,10 +101,10 @@ import { SearchResultComponent } from './User/search-result/search-result.compon
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    EditorModule
-=======
+    EditorModule,
+
     FormsModule
->>>>>>> main
+
   ],
   providers: [],
   bootstrap: [AppComponent],

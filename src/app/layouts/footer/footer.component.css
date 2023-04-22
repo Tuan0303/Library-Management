@@ -9,6 +9,7 @@ footer {
     margin:-16px;
     margin-right: -24px;
     font-size: 17px;
+    z-index: 10;
 }
 
 .column {
