@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,6 +8,18 @@
 
 <body>
     <header>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
         <a class="logo" href="#">
             <img width="50px" height="auto"
                 src="https://png.pngtree.com/png-clipart/20220824/original/pngtree-people-read-books-in-digital-libraries-on-a-giant-smartphone-screens-png-image_8488006.png"
@@ -24,16 +35,23 @@
                     fill-rule="evenodd"></path>
             </svg>
         </div>
-
+        
         <div class="icons">
-            <ul class="menu icon">
+        <app-translate style="z-index: 1;"></app-translate>
+            <ul class="menu">
                 <div>
                     <mat-icon>sort</mat-icon>
-                    <li>Danh mục
+                    <li>{{'Danh mục' | translate}}
                         <ul class="sub-menu">
-                            <li><a href="#">danh mục 1 </a></li>
-                            <li><a href="#">danh mục 2</a></li>
-                            <li><a href="#">danh mục 3</a></li>
+                            <li><a href="#">{{'Danh mục 1' | translate}}  </a></li>
+                            <li class="has-sub-menu">
+                                <a href="#">{{'Danh mục 2' | translate}} </a>
+                                <ul class="sub-menu-mini">
+                                    <li><a href="#">{{'Mục con 1' | translate}}</a></li>
+                                    <li><a href="#">{{'Mục con 2' | translate}}</a></li>
+                                </ul>
+                            </li >
+                            <li ><a href="#">{{'Danh mục 3' | translate}} </a></li>
                         </ul>
                     </li>
                 </div>
@@ -41,16 +59,16 @@
 
 
             <a class="icon" href="#">
-                <mat-icon>library_books</mat-icon>
-                <p href="#">Sách xem nhiều</p>
+                <mat-icon>shopping_cart</mat-icon> 
+                <p href="#">{{'Giỏ sách' | translate}}</p>
             </a>
 
             <a class="icon" href="#">
                 <mat-icon>help_outline</mat-icon>
-                <p href="#">Trợ giúp</p>
+                <p href="#">{{'Trợ giúp' | translate}}</p>
             </a>
 
-            <button role="button">Đăng nhập</button>
+            <button role="button">{{'Đăng nhập' | translate}}</button>
         </div>
     </header>
 </body>

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { matchValidator } from 'src/app/Model/form-validators';
 
 @Component({
   selector: 'app-register-page',

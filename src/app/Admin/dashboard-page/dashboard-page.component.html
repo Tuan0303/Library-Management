@@ -2,7 +2,7 @@
 <section id="sidebar" [ngClass]="status ? 'hide' : ''">
   <a href="#" class="brand">
     <i class='bx bx-book'></i>
-    <span class="text">Novels</span>
+    <span class="text">Library</span>
   </a>
   <ul class="side-menu top">
     <li class="active">
@@ -14,45 +14,31 @@
     <li>
       <a routerLink="/admin/novels">
         <i class='bx bx-book'></i>
-        <span class="text">Novels</span>
+        <span class="text">Sách</span>
       </a>
     </li>
     <li>
       <a routerLink="/admin/genre">
         <i class='bx bxs-doughnut-chart' ></i>
-        <span class="text">Novel Genre</span>
+        <span class="text">Thể loại sách</span>
       </a>
     </li>
     <li>
-      <a routerLink="/admin/volumes">
+      <a routerLink="/">
         <i class='bx bx-list-ul'></i>
-        <span class="text">Volumes</span>
+        <span class="text">Mượn sách</span>
       </a>
     </li>
     <li>
       <a routerLink="/admin/chapters">
         <i class='bx bx-book-content'></i>
-        <span class="text">Chapters</span>
+        <span class="text">Trả sách</span>
       </a>
     </li>
     <li>
       <a routerLink="/admin/users">
         <i class='bx bxs-user'></i>
-        <span class="text">Users</span>
-      </a>
-    </li>
-  </ul>
-  <ul class="side-menu">
-    <li>
-      <a href="#">
-        <i class='bx bxs-cog' ></i>
-        <span class="text">Settings</span>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="logout">
-        <i class='bx bxs-log-out-circle' ></i>
-        <span class="text">Logout</span>
+        <span class="text">Người dùng</span>
       </a>
     </li>
   </ul>
@@ -93,17 +79,17 @@
     <ul class="box-info">
       <li>
         <i class='bx bx-book'></i>
-        <!-- <span class="text">
-          <h3>{{ totalNovels }}</h3>
-          <p>Total Novels</p>
-        </span> -->
+        <span class="text">
+          <h3>600</h3>
+          <p>Total Books</p>
+        </span>
       </li>
       <li>
         <i class='bx bxs-group' ></i>
-        <!-- <span class="text">
-          <h3>{{ totalUsers }}</h3>
+        <span class="text">
+          <h3>200</h3>
           <p>Total Users</p>
-        </span> -->
+        </span>
       </li>
       <li>
         <i class='bx bxs-dollar-circle' ></i>
@@ -116,9 +102,7 @@
     <div class="table-data">
       <div class="order">
         <div class="head">
-          <h3>New Novels</h3>
-          <i class='bx bx-search' ></i>
-          <i class='bx bx-filter' ></i>
+          <h3>New Book</h3>
         </div>
         <table>
           <thead>
@@ -127,30 +111,74 @@
               <th>Updated at</th>
             </tr>
           </thead>
-          <!-- <tbody *ngFor="let novel of novels.slice(0, 5)">
+          <tbody>
             <tr>
               <td>
-                <img src="./assets/{{ novel.cover_image }}">
-                <p>{{ novel.title | limitTo: 25 }}</p>
+                <img src="./assets/profile.png">
+                <p>Cuốn Theo Chiều Gió</p>
               </td>
-              <td>{{ novel.updated_at | date: 'dd/MM/yyyy' }}</td>
+              <td>18/04/2023</td>
             </tr>
 
-          </tbody> -->
+            <tr>
+              <td>
+                <img src="./assets/profile.png">
+                <p>Cuộc Đời Của Pi</p>
+              </td>
+              <td>18/04/2023</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/profile.png">
+                <p>Bá Tước Monte Cristo</p>
+              </td>
+              <td>18/04/2023</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/profile.png">
+                <p>Nhà Giả Kim</p>
+              </td>
+              <td>18/04/2023</td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/profile.png">
+                <p>Cuốn Theo Chiều Gió</p>
+              </td>
+              <td>18/04/2023</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div class="todo">
         <div class="head">
-          <h3>New Chapters</h3>
-          <i class='bx bx-plus' ></i>
-          <i class='bx bx-filter' ></i>
+          <h3>New Series</h3>
         </div>
         <ul class="todo-list">
-          <!-- <li class="completed" *ngFor="let chapter of chapters.slice(0, 5)">
-            <p>{{ chapter.title | limitTo: 25 }}</p>
+          <li class="completed">
+            <p>Bố Già - Mario Puzo</p>
             <i class='bx bx-dots-vertical-rounded' ></i>
-          </li> -->
-
+          </li>
+          <li class="completed">
+            <p>Ông Già Và Biển Cả - Ernest Hemingway</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Hoàng Tử Bé - Antoine de Saint-Exupéry</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Chiến Tranh Và Hòa Bình – Leo Tolstoy</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Không Gia Đình - Hector Malot</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
         </ul>
       </div>
     </div>
