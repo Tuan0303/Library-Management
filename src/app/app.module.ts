@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import {FormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,6 @@ import { ProfilePageComponent } from './User/profile-page/profile-page.component
 import { DashboardPageComponent } from './Admin/dashboard-page/dashboard-page.component';
 import { UserListPageComponent } from './Admin/user-list-page/user-list-page.component';
 
-import {MatInputModule} from '@angular/material/input';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -34,12 +34,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
-import { FormsModule } from '@angular/forms';
 import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
 import { SearchResultComponent } from './User/search-result/search-result.component';
 
-
-import { ReactiveFormsModule } from '@angular/forms';
 import { DarkModeComponent } from './layouts/dark-mode/dark-mode.component';
 
 //translate
@@ -47,7 +44,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateComponent } from './layouts/translate/translate.component';
-import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component';
+import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component'
 
 
 @NgModule({
@@ -65,7 +62,7 @@ import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.com
     RegisterPageComponent,
     ProfilePageComponent,
     DashboardPageComponent,
-    UserListPageComponent
+    UserListPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,6 +86,7 @@ import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.com
     MatCardModule,
     MatSelectModule,
     MatChipsModule,
+    BrowserAnimationsModule,
     //translate
     HttpClientModule,
     TranslateModule.forRoot({

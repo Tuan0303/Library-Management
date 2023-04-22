@@ -25,18 +25,15 @@ li {
   --orange: #FD7238;
   --light-orange: #FFE0D3;
 }
-html {
+/* html {
   overflow-x: hidden;
 }
 body.dark {
   --light: #0C0C1E;
   --grey: #060714;
   --dark: #FBFBFB;
-}
-body {
-  background: var(--grey);
-  overflow-x: hidden;
-}
+} */
+
 
 ul {
   padding-left: 0 !important;
