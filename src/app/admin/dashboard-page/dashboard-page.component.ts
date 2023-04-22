@@ -14,7 +14,8 @@ export class DashboardPageComponent {
   // totalNovels: number = 0;
   // totalUsers: number = 0;
 
-  addToggle() {
+  addToggle()
+  {
     this.status = !this.status;
   }
 
