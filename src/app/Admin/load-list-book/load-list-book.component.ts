@@ -9,6 +9,14 @@ import { Component } from '@angular/core';
 export class LoadListBookComponent {
   selectedFile!: File;
 
+  //Sidebar toggle show hide function
+  status = false;
+
+  addToggle()
+ {
+   this.status = !this.status;
+ }
+
   constructor(private http: HttpClient) { }
 
   onFileSelected(event: any) {

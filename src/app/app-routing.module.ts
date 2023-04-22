@@ -16,13 +16,16 @@ const routes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'details', component: DetailsPageComponent },
   { path: 'search-result', component: SearchResultComponent },
-  { path: 'list-book-admin', component: LoadListBookComponent },
+  // { path: 'list-book-admin', component: LoadListBookComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
   { path: 'profile', component: ProfilePageComponent },
-  { path: 'listuser', component: UserListPageComponent },
+  // { path: 'listuser', component: UserListPageComponent },
+
+
   { path: 'admin', component: DashboardPageComponent },
   { path: 'admin/users', component: UserListPageComponent },
+  { path: 'admin/books', component: LoadListBookComponent },
 ];
 
 @NgModule({
