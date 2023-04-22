@@ -374,3 +374,7 @@ h5 {
 .showcase-item .series-status .status-item {
   margin-top: 5px;
 }
+
+app-footer{
+  width: 100%;
+}
