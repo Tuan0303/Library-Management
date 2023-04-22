@@ -8,9 +8,14 @@ import { FormGroup } from '@angular/forms';
 })
 export class CreateEditUserModalComponent {
   public isUpdateActive: boolean = false
+  status = false;
+  addToggle() {
+    this.status = !this.status;
+  }
   submit() {
 
   }
+
   update() {
 
   }

@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 export class CreateEditBookModalComponent {
   @ViewChild('fileInput') fileInput!: ElementRef;
   fileAttr = 'Choose File';
+  status = false;
   constructor(private fb: FormBuilder) { }
   public registerForm!: FormGroup
 
@@ -17,6 +18,9 @@ export class CreateEditBookModalComponent {
     this.registerForm = this.fb.group({
 
     })
+  }
+  addToggle() {
+    this.status = !this.status;
   }
   submit() {
 
