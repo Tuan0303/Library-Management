@@ -90,11 +90,9 @@ import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.com
     //translate
     HttpClientModule,
     TranslateModule.forRoot({
-<<<<<<< HEAD
+
       loader: {
-=======
-      loader:{
->>>>>>> 537d3e150332298d30f0fc6425f1fc8811590f48
+
         provide: TranslateLoader,
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
@@ -105,14 +103,8 @@ import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.com
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-<<<<<<< HEAD
 export class AppModule { }
 //translate
 export function httpTranslateLoader(http: HttpClient) {
-=======
-export class AppModule {}
-//translate
-export function httpTranslateLoader(http:HttpClient) {
->>>>>>> 537d3e150332298d30f0fc6425f1fc8811590f48
   return new TranslateHttpLoader(http);
 }
