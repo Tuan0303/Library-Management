@@ -20,9 +20,12 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+<<<<<<< HEAD
 
     "@tinymce/tinymce-angular": "^7.0.0",
 
+=======
+>>>>>>> 537d3e150332298d30f0fc6425f1fc8811590f48
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "rxjs": "~7.8.0",

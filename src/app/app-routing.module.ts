@@ -51,6 +51,9 @@ const routes: Routes = [
   { path: 'admin', component: DashboardPageComponent },
   { path: 'admin/users', component: UserListPageComponent },
   { path: 'admin/books', component: LoadListBookComponent },
+<<<<<<< HEAD
+>>>>>>> 537d3e150332298d30f0fc6425f1fc8811590f48
+=======
 >>>>>>> 537d3e150332298d30f0fc6425f1fc8811590f48
 ];
 
