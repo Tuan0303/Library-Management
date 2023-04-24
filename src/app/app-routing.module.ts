@@ -14,7 +14,7 @@ import { UserListPageComponent } from './Admin/user-list-page/user-list-page.com
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'details', component: DetailsPageComponent },
+  { path: '', component: DetailsPageComponent },
   { path: 'search-result', component: SearchResultComponent },
   // { path: 'list-book-admin', component: LoadListBookComponent },
   { path: 'login', component: LoginPageComponent },
