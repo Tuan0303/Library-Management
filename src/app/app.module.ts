@@ -47,14 +47,14 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { LoginPageComponent } from './User/login-page/login-page.component';
 import { RegisterPageComponent } from './User/register-page/register-page.component';
 import { ProfilePageComponent } from './User/profile-page/profile-page.component';
-import { DashboardPageComponent } from './admin/dashboard-page/dashboard-page.component';
-import { UserListPageComponent } from './admin/user-list-page/user-list-page.component';
+import { DashboardPageComponent } from './Admin/dashboard-page/dashboard-page.component';
+import { UserListPageComponent } from './Admin/user-list-page/user-list-page.component';
 import { TranslateComponent } from './layouts/translate/translate.component';
-import { LoadListBookComponent } from './admin/load-list-book/load-list-book.component'
+import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component'
 import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
 import { BooksByThemeComponent } from './User/books-by-theme/books-by-theme.component';
-import { CreateEditBookModalComponent } from './admin/create-edit-book-modal/create-edit-book-modal.component';
-import { CreateEditUserModalComponent } from './admin/create-edit-user-modal/create-edit-user-modal.component';
+import { CreateEditBookModalComponent } from './Admin/create-edit-book-modal/create-edit-book-modal.component';
+import { CreateEditUserModalComponent } from './Admin/create-edit-user-modal/create-edit-user-modal.component';
 import { ErrorPageComponent } from './User/error-page/error-page.component';
 import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
 
