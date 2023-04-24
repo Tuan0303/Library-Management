@@ -11,7 +11,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { LoginPageComponent } from './User/login-page/login-page.component';
 import { RegisterPageComponent } from './User/register-page/register-page.component';
 import { ProfilePageComponent } from './User/profile-page/profile-page.component';
-import { DashboardPageComponent } from './Admin/dashboard-page/dashboard-page.component';
+import { DashboardPageComponent } from './Admin/Dashboard-page/Dashboard-page.component';
 import { UserListPageComponent } from './Admin/user-list-page/user-list-page.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -33,7 +33,7 @@ import { DetailsPageComponent } from './User/details-page/details-page.component
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BackToTopComponent } from './layouts/back-to-top/back-to-top.component';
 import { SearchResultComponent } from './User/search-result/search-result.component';
 
@@ -46,6 +46,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateComponent } from './layouts/translate/translate.component';
 import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.component'
 
+import { CreateEditBookModalComponent } from './Admin/create-edit-book-modal/create-edit-book-modal.component';
+import { CreateEditUserModalComponent } from './Admin/create-edit-user-modal/create-edit-user-modal.component';
+import { BorrowPagesComponent } from './User/borrow-pages/borrow-pages.component';
+import { ForgotPasswordComponent } from './User/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -63,8 +67,13 @@ import { LoadListBookComponent } from './Admin/load-list-book/load-list-book.com
     ProfilePageComponent,
     DashboardPageComponent,
     UserListPageComponent,
+    CreateEditUserModalComponent,
+    CreateEditBookModalComponent,
+    BorrowPagesComponent,
+    ForgotPasswordComponent
   ],
   imports: [
+    MatDatepickerModule,
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
