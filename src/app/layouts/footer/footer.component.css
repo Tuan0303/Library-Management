@@ -1,17 +1,19 @@
-*{
+* {
     z-index: 999;
 }
+
 footer {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right,   #0070DA, #0083D6, #0091C0, #009CA0, #00A37E);
-
+    background: linear-gradient(to right, #0070DA, #0083D6, #0091C0, #009CA0, #00A37E);
     padding: 10px 30px 10px 30px;
     font-size: 14px;
     color: #FEFEDF;
     font-family: Arial, sans-serif;
-    margin: -16px;
-    margin-right: -24px;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
     font-size: 17px;
 }
 

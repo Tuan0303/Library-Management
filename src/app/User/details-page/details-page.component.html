@@ -1,14 +1,12 @@
-<html [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-  <div class="wrapper">
-    <div class="container">
-    <app-header style="z-index: 999; position: absolute;"></app-header>
+<div class="wrapper" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
+  <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
+    <!-- <app-header style="z-index: 999; position: absolute;"></app-header> -->
     <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
       <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
         <div class="main-content">
@@ -18,7 +16,7 @@
           <div class="TimeUpdate">
             <p>[{{'Cập nhật lúc' | translate}}: 14:20 03/03/2023]</p>
           </div>
-           <div class="rent">
+          <div class="rent">
             <p>15</p>
             <p>{{'Lượt thuê' | translate}}</p>
           </div>
@@ -226,5 +224,4 @@
     </div>
 
   </div>
-<app-back-to-top></app-back-to-top>
-<app-footer></app-footer>
+  <app-back-to-top></app-back-to-top>

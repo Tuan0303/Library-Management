@@ -13,22 +13,23 @@ html {
 }
 
 header {
-  z-index: 3;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  margin: -8px;
-  padding: 7px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    z-index: 3;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: -8px;
+    padding: 7px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    z-index: 999;
 }
 
 .logo {

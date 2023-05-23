@@ -18,11 +18,10 @@ export class UserListPageComponent {
   @ViewChild(MatPaginator) paginator!: MatPaginator
   @ViewChild(MatSort) sort!: MatSort
 
-   //Sidebar toggle show hide function
-   status = false;
+  //Sidebar toggle show hide function
+  status = false;
 
-   addToggle()
-  {
+  addToggle() {
     this.status = !this.status;
   }
 
@@ -53,7 +52,6 @@ export class UserListPageComponent {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
         console.log(this.users);
-
       })
 
   }
