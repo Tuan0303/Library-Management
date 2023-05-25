@@ -9,15 +9,16 @@
     <!-- <app-header style="z-index: 999; position: absolute;"></app-header> -->
     <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
       <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
-        <div class="main-content">
-          <img src="https://salt.tikicdn.com/cache/w1200/ts/product/9f/d0/90/bfe7bec5b6d9704078a80692874e3279.jpg"
-            alt="Book cover">
-          <h2 [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">Naruto Mashashi Kisimotio</h2>
+        <div class="main-content" *ngIf="book">
+          <img [src]="book.img" alt="Book Image" />
+          <h2 [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">{{book.name}}</h2>
+
           <div class="TimeUpdate">
-            <p>[{{'Cập nhật lúc' | translate}}: 14:20 03/03/2023]</p>
+            <p>[{{'Cập nhật lúc' | translate}}: {{book.updated}}]</p>
           </div>
+
           <div class="rent">
-            <p>15</p>
+            <p>{{book.hires}}</p>
             <p>{{'Lượt thuê' | translate}}</p>
           </div>
           <div class="rating">
@@ -34,25 +35,23 @@
           <table>
             <tr>
               <td class="width"><i class="fa-solid fa-user" style="color: #a29d9d;"></i> {{'Tác giả' | translate}}:</td>
-              <td>Nguyễn Quốc Tuấn</td>
+              <td>{{book.author}}</td>
             </tr>
             <tr>
               <td class="width"><i class="fa-solid fa-house" style="color: #a29d9d;"></i> {{'Nhà xuất bản' |
                 translate}}:</td>
-              <td>Nhà xuất bản Kim Đồng</td>
+              <td>{{book.company}}</td>
             </tr>
             <tr>
               <td class="width"><i class="fa-solid fa-calendar-days" style="color: #a29d9d;"></i> {{'Ngày xuất bản' |
                 translate}}:</td>
-              <td>19/03/1682</td>
+              <td>{{book.date}}</td>
             </tr>
             <tr>
               <td class="width"><i class="fa-solid fa-pen-nib" style="color: #a29d9d;"></i> {{'Thể loại' | translate}}:
               </td>
               <td>
-                <a href="#">{{'Hành động' | translate}}</a>
-                <a href="#">{{'Tình cảm' | translate}}</a>
-                <a href="#">{{'Phiêu lưu' | translate}}</a>
+                <a *ngFor="let category of book.categories">{{ category.category | translate }}</a>
 
                 <!-- darkmode -->
                 <button class="btn-darkmode" (click)="toggleDarkMode()"><i class="fa-regular fa-moon"></i></button>

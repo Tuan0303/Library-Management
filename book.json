@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+  "book": {
+    "id": "1",
+    "img": "https://salt.tikicdn.com/cache/w1200/ts/product/9f/d0/90/bfe7bec5b6d9704078a80692874e3279.jpg",
+    "name": "Naruto Mashashi Kisimotio",
+    "updated": "14:20 03/03/2023",
+    "hires": "35",
+    "author": "Nguyễn Quốc Tuấn",
+    "company": "Kim đồng",
+    "date": "19/03/1682",
+    "categories": [
+      {
+        "category": "Hành động"
+      },
+      {
+        "category": "Tình cảm"
+      },
+      {
+        "category": "Phưu lưu"
+      }
+    ]
+  }
+}

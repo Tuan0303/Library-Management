@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BookService } from 'src/app/Services/book.service';
 
 @Component({
   selector: 'app-details-page',
@@ -23,5 +24,23 @@ export class DetailsPageComponent {
   darkMode = false;
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
+  }
+
+  //call apibook service
+  book: any;
+  constructor(private bookApi: BookService){}
+  ngOnInit() {
+    this.getBook();
+  }
+
+  getBook() {
+    this.bookApi.getBook().subscribe(
+      (response) => {
+        this.book = response;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 }
