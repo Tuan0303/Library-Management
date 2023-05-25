@@ -28,7 +28,7 @@ export class DetailsPageComponent {
 
   //call apibook service
   book: any;
-  constructor(private bookApi: BookService){}
+  constructor(private bookApi: BookService) { }
   ngOnInit() {
     this.getBook();
   }
