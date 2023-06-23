@@ -41,7 +41,7 @@ h2 {
   grid-template-areas: "main extra";
   padding: 0;
   padding: 10px 10px 27px 10px;
-}
+} 
 
 .main {
   max-width: 1000px;
@@ -183,6 +183,10 @@ li {
   transform: translate(0em, 0.2em);
 }
 
+.category:hover{
+  cursor: pointer ;
+}
+
 .list {
   border-bottom: solid 1px #ddd;
   list-style-type: decimal;
@@ -213,7 +217,7 @@ li {
 .width {
   height: 25px;
   padding-right: 20px;
-  width: 142px;
+  width: 185px;
 }
 
 td {

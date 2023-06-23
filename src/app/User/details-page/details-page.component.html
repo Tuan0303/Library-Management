@@ -6,9 +6,9 @@
 
 <div class="wrapper" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
   <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
-    <!-- <app-header style="z-index: 999; position: absolute;"></app-header> -->
     <div class="container" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
       <main class="main" [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">
+
         <div class="main-content" *ngIf="book">
           <img [src]="book.img" alt="Book Image" />
           <h2 [ngClass]="{'light-mode': !darkMode, 'dark-mode': darkMode}">{{book.name}}</h2>
@@ -50,7 +50,7 @@
             <tr>
               <td class="width"><i class="fa-solid fa-pen-nib" style="color: #a29d9d;"></i> {{'Thể loại' | translate}}:
               </td>
-              <td>
+              <td class="category">
                 <a *ngFor="let category of book.categories">{{ category.category | translate }}</a>
 
                 <!-- darkmode -->

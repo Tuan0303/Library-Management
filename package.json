@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"json-server --watch book.json\" \"ng serve\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -33,7 +33,9 @@
     "@angular/compiler-cli": "^15.1.0",
     "@types/jasmine": "~4.3.0",
     "angular-cli-ghpages": "^1.0.6",
+    "concurrently": "^8.0.1",
     "jasmine-core": "~4.5.0",
+    "json-server": "^0.17.3",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",

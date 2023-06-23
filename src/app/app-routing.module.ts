@@ -24,8 +24,8 @@ const routes: Routes = [
 
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
-  { path: '', component: DetailsPageComponent },
-  { path: 'search', component: SearchResultComponent },
+  { path: 'details', component: DetailsPageComponent },
+  { path: '', component: SearchResultComponent },
   // { path: 'list-book-admin', component: LoadListBookComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
